@@ -37,7 +37,6 @@ public class CustomResultSet implements ResultSet {
 
     @Override
     public String getString(int columnIndex) throws SQLException {
-        System.out.println("Custom!!!!!");
         return customResultSet.getString(columnIndex);
     }
 
