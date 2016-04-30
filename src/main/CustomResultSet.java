@@ -117,7 +117,6 @@ public class CustomResultSet implements ResultSet {
 
     @Override
     public String getString(String columnLabel) throws SQLException {
-        System.out.println("Custom!!!!!");
         return customResultSet.getString(columnLabel);
     }
 

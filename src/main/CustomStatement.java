@@ -48,7 +48,7 @@ public class CustomStatement implements Statement {
                 flag = !flag;
             }
             comment = comment + arr[i] + arr[i + 1];
-            if (comment.equals("--")  && !flag) {
+            if (comment.equals("--") && !flag) {
                 return false;
             }
             if (arr[i] == '#' && !flag) {// ignoring if last character of string is #
@@ -68,9 +68,9 @@ public class CustomStatement implements Statement {
         if (nextToOr == "1=1") {
             return false;
         }
-        if(nextToOr.contains("=")){
-            String[] parts=nextToOr.split("=");
-            if(parts[0].equals(parts[1])){
+        if (nextToOr.contains("=")) {
+            String[] parts = nextToOr.split("=");
+            if (parts[0].equals(parts[1])) {
                 return false;
             }
         }
@@ -124,8 +124,6 @@ public class CustomStatement implements Statement {
         if (!oneorone(line)) {
             return false;
         }
-
-        System.out.println(line);
         return true;
     }
 
@@ -133,11 +131,11 @@ public class CustomStatement implements Statement {
     @Override
     public ResultSet executeQuery(String sql) throws SQLException {
         if (input_sanitization(sql)) {
-            System.out.println("Clean");
+            return new CustomResultSet(this, customStatement.executeQuery(sql));
         } else {
-            System.out.println("Malicious code");
+            System.out.println("Malicious code::::: " + sql);
+            return new CustomResultSet(this, null);
         }
-        return new CustomResultSet(this, customStatement.executeQuery(sql));
     }
 
 

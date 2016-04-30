@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7356618-18d2-4eec-b39a-5bba54249eb7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SQLInjection/main/CustomResultSet.class" afterPath="$PROJECT_DIR$/out/production/SQLInjection/main/CustomResultSet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SQLInjection/main/CustomStatement.class" afterPath="$PROJECT_DIR$/out/production/SQLInjection/main/CustomStatement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SQLInjection/main/NewMySQLConnector.class" afterPath="$PROJECT_DIR$/out/production/SQLInjection/main/NewMySQLConnector.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/CustomResultSet.java" afterPath="$PROJECT_DIR$/src/main/CustomResultSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/CustomStatement.java" afterPath="$PROJECT_DIR$/src/main/CustomStatement.java" />
@@ -31,8 +34,8 @@
       <file leaf-file-name="CustomResultSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/CustomResultSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+            <state vertical-scroll-proportion="-4.1297708">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +47,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/NewMySQLConnector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+              <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
               <folding>
-                <marker date="1461819705357" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
-                <marker date="1461819705357" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
-                <marker date="1461819705357" expanded="true" signature="699:747" placeholder="select * fro... new_table" />
+                <marker date="1461957376136" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
+                <marker date="1461957376136" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
               </folding>
             </state>
           </provider>
@@ -79,8 +81,8 @@
       <file leaf-file-name="CustomStatement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/CustomStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.13047712">
-              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.65457684">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -90,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/CustomDriver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/main/CustomConnection.java" />
         <option value="$PROJECT_DIR$/src/main/CustomDriver.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/CustomResultSet.java" />
         <option value="$PROJECT_DIR$/src/main/MySQLConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/CustomResultSet.java" />
         <option value="$PROJECT_DIR$/src/main/NewMySQLConnector.java" />
         <option value="$PROJECT_DIR$/src/main/CustomStatement.java" />
       </list>
@@ -252,7 +254,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="main.NewMySQLConnector" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;1 or id=2&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;22 union select * from new_table #&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -665,7 +667,7 @@
       <workItem from="1461178586258" duration="7434000" />
       <workItem from="1461463805239" duration="2219000" />
       <workItem from="1461518960062" duration="9734000" />
-      <workItem from="1461645173907" duration="14040000" />
+      <workItem from="1461645173907" duration="24145000" />
     </task>
     <task id="LOCAL-00001" summary="modified git">
       <created>1461645132948</created>
@@ -673,11 +675,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461645132948</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added input sanitization">
+      <created>1461883443430</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1461883443430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33427000" />
+    <option name="totallyTimeSpent" value="43532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -731,25 +739,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified git" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified git" />
+    <MESSAGE value="added input sanitization" />
+    <option name="LAST_COMMIT_MESSAGE" value="added input sanitization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/CustomStatement.java</url>
-          <line>134</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/CustomStatement.java</url>
           <line>90</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/CustomStatement.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -773,9 +782,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <marker date="1461819705357" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
-            <marker date="1461819705357" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
-            <marker date="1461819705357" expanded="true" signature="699:747" placeholder="select * fro... new_table" />
+            <marker date="1461957376136" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
+            <marker date="1461957376136" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
           </folding>
         </state>
       </provider>
@@ -985,6 +993,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,14 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25">
           <caret line="419" column="0" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/sql/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="660" column="0" selection-start-line="660" selection-start-column="0" selection-end-line="660" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,16 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CustomResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/sql/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1111,11 +1105,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/MySQLConnector.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1165802">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CustomDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding />
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,10 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CustomDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/CustomResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.1297708">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1142,19 +1148,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/NewMySQLConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
           <folding>
-            <marker date="1461819705357" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
-            <marker date="1461819705357" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
-            <marker date="1461819705357" expanded="true" signature="699:747" placeholder="select * fro... new_table" />
+            <marker date="1461957376136" expanded="true" signature="699:722" placeholder="select * fro... new_table" />
+            <marker date="1461957376136" expanded="true" signature="699:732" placeholder="select * fro... new_table" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MySQLConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/CustomStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13047712">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.65457684">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding />
         </state>
       </provider>
