@@ -1,4 +1,4 @@
-package main;
+package connection;
 
 import java.io.InputStream;
 import java.io.Reader;

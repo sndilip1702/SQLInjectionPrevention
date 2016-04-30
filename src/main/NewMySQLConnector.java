@@ -12,12 +12,12 @@ public class NewMySQLConnector {
         String password = "root";
         System.out.println("Connecting to database...");
         try  {
-            Class.forName("main.CustomDriver");
+            Class.forName("connection.CustomDriver");
             Connection connection = DriverManager.getConnection(url, username, password);
             System.out.println("Database connected!");
             Statement statement = connection.createStatement();
             ResultSet resultSet = null;
-            resultSet = statement.executeQuery("select * from new_table where id=" + args[0] + ";");
+            resultSet = statement.executeQuery("select * from new_table where names='" + args[0] + "';");
             while (resultSet.next()){
                 System.out.println(resultSet.getString("names"));
             }

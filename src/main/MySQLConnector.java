@@ -3,6 +3,8 @@ package main;
 /**
  * Created by sndil on 4/20/2016.
  */
+import connection.CustomConnection;
+
 import java.sql.*;
 
 public class MySQLConnector {

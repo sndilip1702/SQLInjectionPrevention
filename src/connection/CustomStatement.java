@@ -1,4 +1,4 @@
-package main;
+package connection;
 
 import java.sql.*;
 
@@ -101,9 +101,7 @@ public class CustomStatement implements Statement {
                 split = mystr.split("[Oo][Rr]")[1];
                 mystr = split;
                 String nextToOr = split.trim().split(" ")[0];
-//				System.out.println("nextToOr:"+nextToOr);
                 if (!check(nextToOr)) {
-//					System.out.println(nextToOr);
                     return false;
                 }
             }
@@ -114,7 +112,6 @@ public class CustomStatement implements Statement {
 
     public boolean input_sanitization(String line) {
         char[] chArray = line.toCharArray();
-//		System.out.println("input_san");
         if (!countquotes(chArray)) { // must be even
             return false;
         }
